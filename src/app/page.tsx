@@ -52,22 +52,15 @@ const mockRepositories = [
     openForContributors: true,
   },
 ];
-
-const mockAvatars = ["/file.svg", "/globe.svg", "/window.svg"];
-
 export default function Home() {
   const [open, setOpen] = useState(false);
-  const [type, setType] = useState("Book");
   const [query, setQuery] = useState("");
-
-  // Keyboard shortcut: Command+K (Mac) or Ctrl+K (Windows/Linux)
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
         e.preventDefault();
         setOpen((prev) => !prev);
       }
-      // Close modal on Escape
       if (open && e.key === "Escape") {
         setOpen(false);
       }
@@ -128,7 +121,7 @@ export default function Home() {
                   msOverflowStyle: "none",
                 }}
               >
-                {mockRepositories.map((repository, idx) => (
+                {mockRepositories.map((repository) => (
                   <div key={repository.name}>
                     <div className="flex items-center gap-3 p-2 border border-white/10 hover:bg-white/5 h-14 min-h-14">
                       <img
