@@ -111,7 +111,7 @@ export default function Home() {
               </button>
             </div>
             {/* Results */}
-            <div className="px-6 py-6 border border-white/10 bg-[#18181b]/40 mt-3 rounded relative">
+            <div className="px-6 py-6 border border-white/10 bg-[#000000]/40 mt-3 rounded relative">
               <div className="text-white/50 text-lg mb-3">Popular</div>
               <div
                 className="flex flex-col gap-2 px-3 overflow-y-auto scrollbar-none"
