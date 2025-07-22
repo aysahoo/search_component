@@ -133,11 +133,11 @@ export default function Home() {
                         <div className="text-white/80 font-medium text-sm">
                           {" "}
                           {repository.name}
-                          <div className="flex flex-row items-center text-[11px] text-gray-400 py-1">
+                          <div className="flex flex-row items-center text-[11px] text-gray-800 py-1">
                             {" "}
                             <GitPullRequest
                               size={10}
-                              className="mr-1 text-purple-500"
+                              className="mr-1 text-purple-600"
                             />
                             {repository.stars}
                             <Star
